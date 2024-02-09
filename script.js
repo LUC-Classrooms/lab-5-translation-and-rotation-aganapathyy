@@ -14,10 +14,14 @@ function draw() {
   background(200);
   
   push(); // create a new temporary drawing layer
-  translate(0, 0); // change these arguments
+  translate(width/2, height/2); // change these arguments
   
   //add an if() statement here
-  
+  if(mouseIsPressed){
+    rotate(PI/2);
+  } else {
+    rotate(0);
+  }
   line(0, -50, 40, -20);
   line(0, -50, -40, -20);
   fill(255);
@@ -37,4 +41,3 @@ function draw() {
 
   pop(); // dispose of the drawing layer
 }
-
